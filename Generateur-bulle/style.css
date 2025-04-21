@@ -1,0 +1,29 @@
+h2 {
+  font-size: 5rem;
+  color: rgba(169, 169, 169, 0.705);
+
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  cursor: crosshair;
+}
+
+.bull {
+  background: rgb(166, 218, 114);
+  border-radius: 300px;
+  position: absolute;
+  animation: anim 8s ease forwards;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    filter: hue-rotate(720deg);
+    opacity: 1;
+  }
+}
